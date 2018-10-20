@@ -1,0 +1,6 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+- link:
+    ~/.gitconfig: development/git/gitconfig

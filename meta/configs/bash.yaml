@@ -1,0 +1,18 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+      glob: true
+- clean:
+  - ~/.bashrc.d
+- link:
+    ~/.bashrc: shells/bash/bashrc
+    ~/.bash_logout: shells/bash/bash_logout
+    ~/.bash_profile: shells/bash/bash_profile
+    ~/.bashrc.d/a30-vars.sh: shells/bash/bashrc.d/a30-vars.sh
+    ~/.bashrc.d/i20-osxonly.sh: shells/bash/bashrc.d/i20-osxonly.sh
+    ~/.bashrc.d/i20-ubuntuonly.sh: shells/bash/bashrc.d/i20-ubuntuonly.sh
+    ~/.bashrc.d/i50-functions.sh: shells/bash/bashrc.d/i50-functions.sh
+    ~/.bashrc.d/i90-ps1.sh: shells/bash/bashrc.d/i90-ps1.sh
+    ~/.bashrc.d/i99-finalstuff.sh: shells/bash/bashrc.d/i99-finalstuff.sh
+    ~/.bash_it/: shells/bash/bash_it/*

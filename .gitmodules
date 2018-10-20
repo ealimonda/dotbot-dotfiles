@@ -1,0 +1,8 @@
+[submodule "meta/dotbot"]
+	path = meta/dotbot
+	url = https://github.com/anishathalye/dotbot.git
+	ignore = dirty
+[submodule "shells/bash/bash_it"]
+	path = shells/bash/bash_it
+	url = https://github.com/ealimonda/bash-it.git
+	branch = emi

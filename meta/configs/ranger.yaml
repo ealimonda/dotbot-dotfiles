@@ -1,0 +1,11 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+- clean:
+  - ~/.config/ranger
+- link:
+    ~/.config/ranger/commands.py: apps/ranger/commands.py
+    ~/.config/ranger/rc.conf: apps/ranger/rc.conf
+    ~/.config/ranger/rifle.conf: apps/ranger/rifle.conf
+    ~/.config/ranger/scope.sh: apps/ranger/scope.sh

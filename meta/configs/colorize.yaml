@@ -1,0 +1,6 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+- link:
+    ~/.colorizerc: tools/colorize/colorizerc
