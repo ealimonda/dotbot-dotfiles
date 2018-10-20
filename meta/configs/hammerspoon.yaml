@@ -1,0 +1,8 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+- clean:
+  - ~/.hammerspoon
+- link:
+    ~/.hammerspoon/init.lua: apps/hammerspoon/init.lua
