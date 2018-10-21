@@ -16,3 +16,4 @@
     ~/.bashrc.d/i90-ps1.sh: shells/bash/bashrc.d/i90-ps1.sh
     ~/.bashrc.d/i99-finalstuff.sh: shells/bash/bashrc.d/i99-finalstuff.sh
     ~/.bash_it/: shells/bash/bash_it/*
+    ~/.profile: shells/bash/bash_profile
