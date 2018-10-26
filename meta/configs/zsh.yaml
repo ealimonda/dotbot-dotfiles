@@ -13,3 +13,4 @@
     ~/.zshrc.d/i50-functions.zsh: shells/zsh/zshrc.d/i50-functions.zsh
     ~/.zshrc.d/i90-ps1.zsh: shells/zsh/zshrc.d/i90-ps1.zsh
     ~/.zshrc.d/scripts/batcharge.py: shells/zsh/zshrc.d/scripts/batcharge.py
+    ~/.zshrc.d/zsh-vcs-prompt/: shells/zsh/zshrc.d/zsh-vcs-prompt/*

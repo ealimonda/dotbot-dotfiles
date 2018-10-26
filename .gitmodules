@@ -6,3 +6,6 @@
 	path = shells/bash/bash_it
 	url = https://github.com/ealimonda/bash-it.git
 	branch = emi
+[submodule "shells/zsh/zshrc.d/zsh-vcs-prompt"]
+	path = shells/zsh/zshrc.d/zsh-vcs-prompt
+	url = https://github.com/ealimonda/zsh-vcs-prompt.git
