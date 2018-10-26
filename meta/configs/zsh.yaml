@@ -1,0 +1,15 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+      glob: true
+- clean:
+  - ~/.zshrc.d
+- link:
+    ~/.zshrc: shells/zsh/zshrc
+    ~/.zshenv: shells/zsh/zshenv
+    ~/.zshrc.d/a30-vars.zsh: shells/zsh/zshrc.d/a30-vars.zsh
+    ~/.zshrc.d/i20-osxonly.zsh: shells/zsh/zshrc.d/i20-osxonly.zsh
+    ~/.zshrc.d/i50-functions.zsh: shells/zsh/zshrc.d/i50-functions.zsh
+    ~/.zshrc.d/i90-ps1.zsh: shells/zsh/zshrc.d/i90-ps1.zsh
+    ~/.zshrc.d/scripts/batcharge.py: shells/zsh/zshrc.d/scripts/batcharge.py
