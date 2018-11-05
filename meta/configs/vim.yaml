@@ -1,0 +1,22 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+      glob: true
+- clean:
+    - ~/.vim/syntax
+    - ~/.vim/spell
+    - ~/.vim/plugin
+    - ~/.vim/colors
+    - ~/.vim/autoload
+    - ~/.vim/after/ftplugin
+    - ~/.vim/after
+    - ~/.vim
+- link:
+    ~/.vimrc: apps/vim/vimrc
+    ~/.vim/after/ftplugin: apps/vim/vim/after/ftplugin/*
+    ~/.vim/autoload/: apps/vim/vim/autoload/*
+    ~/.vim/colors/: apps/vim/vim/colors/*
+    ~/.vim/plugin/: apps/vim/vim/plugin/*
+    ~/.vim/spell/: apps/vim/vim/spell/*
+    ~/.vim/syntax/: apps/vim/vim/syntax/*
