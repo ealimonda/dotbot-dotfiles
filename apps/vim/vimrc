@@ -159,6 +159,9 @@ set nocursorcolumn
 
 " Used i.e. by gitgutter
 set updatetime=1000
+highlight GitGutterAdd    guifg=#009900 guibg=#000000 ctermfg=2 ctermbg=0
+highlight GitGutterChange guifg=#bbbb00 guibg=#000000 ctermfg=3 ctermbg=0
+highlight GitGutterDelete guifg=#ff2222 guibg=#000000 ctermfg=1 ctermbg=0
 
 " Various Mac-only settings {{{1
 " (note: some of them would work on other platforms too)
