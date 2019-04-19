@@ -100,7 +100,7 @@ if ! type truncate >/dev/null 2>&1; then
 	}
 fi
 
-# rsync over ssh with resume options.  And caffeinated in case we're on a Mac we don't want to sleep dorung the process
+# rsync over ssh with resume options.  And caffeinate in case we're on a Mac we don't want to sleep dorung the process
 function safersync {
 	if [ -z "$1" -o -z "$2" ]; then
 		echo "Usage: safersync <source> <destination>"
@@ -118,6 +118,23 @@ function growl {
 	echo -e $'\e]9;'"${1}"'\007'
 	return
 }
+
+# Synchronize tmux environment into the current shell
+if type tmux >/dev/null 2>&1; then
+	function tmuxsyncenv {
+		local v
+		while read v; do
+			if [[ $v == -* ]]; then
+				unset ${v/#-/}
+			else
+				# Add quotes around the argument
+				# v=${v/=/=\\\"}
+				# v=${v/%/\\\"}
+				export $v
+			fi
+		done < <(tmux show-environment)
+	}
+fi
 
 # Some aliases to make commands more colorful
 alias grep='grep --color=auto'
