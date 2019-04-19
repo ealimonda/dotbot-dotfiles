@@ -11,7 +11,7 @@ export LANG='en_US.UTF-8'
 # And a good editor
 export EDITOR=vim
 # Prepend ~/bin to $PATH
-export PATH="$HOME/bin:$PATH"
+path=( ~/bin $path )
 # Make various commands a bit more colorful
 export LESS="-RM"
 #R:Raw color codes in output (don't remove color codes);
@@ -20,7 +20,7 @@ export LESS="-RM"
 ## OS X Only
 if [ "$(uname)" = "Darwin" ]; then
 	# Append homebrew to the $PATH
-	export PATH=$PATH:/usr/local/bin:/usr/local/sbin
+	path+=( /usr/local/bin /usr/local/sbin )
 	#export PYTHONPATH="$(brew --prefix)/lib/python2.7/site-packages$( [ -n "$PYTHONPATH" ] && echo ":$PYTHONPATH" )"
 	export HOMEBREW_TEMP=/usr/local/temp
 fi
