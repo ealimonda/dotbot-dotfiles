@@ -138,7 +138,7 @@ compdef _gnu_generic slrnpull make df du
 #zstyle ':completion:*:processes' command 'ps -au$USER'
 
 ## add colors to processes for kill completion
-#zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
+zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 
 ## common usernames
 #users=(jozo tomi peh) ## complete usernames
