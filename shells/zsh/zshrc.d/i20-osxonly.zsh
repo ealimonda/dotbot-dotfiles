@@ -49,7 +49,7 @@ if [ "$(uname)" = "Darwin" ]; then
 
 	#export OSXSDK="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk"
 	function osxsdk {
-		echo "$(xcodebuild -version $(xcodebuild -showsdks 2>/dev/null | awk '/^$/{p=0};p; /OS X SDKs:/{p=1}' | tail -1 | cut -f3) Path 2>/dev/null)"
+		echo "$(xcodebuild -version $(xcodebuild -showsdks 2>/dev/null | awk '/^$/{p=0};p; /macOS SDKs:/{p=1}' | tail -1 | cut -f3) Path 2>/dev/null)"
 	}
 
 	if [ -d /usr/local/share/zsh-completions ]; then
