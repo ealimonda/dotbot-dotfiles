@@ -49,8 +49,6 @@ if [ -d ${HOME}/.zshrc.d ]; then
 	done
 fi
 
-alias grep='grep --color=auto'
-
 # History
 export HISTSIZE=2000
 export HISTFILE="$HOME/.zsh_history"

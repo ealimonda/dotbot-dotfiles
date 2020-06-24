@@ -118,4 +118,9 @@ function growl {
 	echo -e $'\e]9;'"${1}"'\007'
 	return
 }
+
+# Some aliases to make commands more colorful
+alias grep='grep --color=auto'
+alias ls='ls --color'
+
 # vim: ts=4 sw=4
