@@ -12,11 +12,6 @@ if [ "$UNAME" = "Darwin" ]; then
 	# Load mactrash if available
 	[[ -f ~/.mactrash ]] && . ~/.mactrash
 
-	# Italian alias for 'say'
-	function dimmi {
-		say -v Silvia $@
-	}
-
 	# Rebuild LaunchServices Database
 	function lsrebuild {
 		echo "Rebuilding LaunchServices Database"
@@ -111,12 +106,6 @@ function safersync {
 	else
 		caffeinate -s rsync -avzP --progress -e ssh "$1" "$2"
 	fi
-}
-
-# Growl notification from iTerm
-function growl {
-	echo -e $'\e]9;'"${1}"'\007'
-	return
 }
 
 # Synchronize tmux environment into the current shell
