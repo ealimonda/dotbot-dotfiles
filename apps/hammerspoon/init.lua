@@ -912,7 +912,7 @@ function url_dispatcher:init()
         end
         local url = url_dispatcher.current_url[1]
         table.remove(url_dispatcher.current_url, 1)
-        if handler.bundle_id then
+        if handler and handler.bundle_id then
             hs.urlevent.openURLWithBundle(url, handler.bundle_id)
         end
         if #url_dispatcher.current_url > 0 then
