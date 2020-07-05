@@ -5,5 +5,8 @@ ctags
 git
 hammerspoon
 ranger
+tmux-common
+tmux-f1
+tmux-osx
 vim
 zsh

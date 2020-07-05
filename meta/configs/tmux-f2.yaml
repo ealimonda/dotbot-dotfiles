@@ -1,0 +1,8 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+- clean:
+  - ~/.tmux
+- link:
+    ~/.tmux/tmux.prefix.conf.include: apps/tmux/tmux/tmux.prefix-f2.conf.include

@@ -1,0 +1,8 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+- clean:
+  - ~/.tmux
+- link:
+    ~/.tmux/tmux.platform.conf.include: apps/tmux/tmux/tmux.platform-osx.conf.include

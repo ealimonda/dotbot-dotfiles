@@ -1,0 +1,41 @@
+#*******************************************************************************************************************
+#* Config files                                                                                                    *
+#*******************************************************************************************************************
+#* File:             tmux.platform-linux.conf.include                                                              *
+#* Copyright:        (c) 2011-2020 alimonda.com; Emanuele Alimonda                                                 *
+#*                   Public Domain                                                                                 *
+#*******************************************************************************************************************
+
+## Note: This file uses folding.  If you're in vim and you don't know how to unfold, press zR
+
+### Prefix Settings
+# {{{
+# No overrides
+# }}}
+
+### General Keybindings
+# {{{
+# No overrides
+# }}}
+
+### General Settings
+# {{{
+# No overrides
+# }}}
+
+### Statusbar
+# {{{
+# No overrides
+# }}}
+
+### Extra settings and bindings
+# {{{
+# No overrides
+# }}}
+
+### Plugins
+# {{{
+# No overrides
+# }}}
+
+# vim: set ft=conf foldmethod=marker foldenable :

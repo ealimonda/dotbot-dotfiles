@@ -2,7 +2,7 @@ bash
 ctags
 git
 tmux-common
-tmux-f2
+tmux-f1
 tmux-linux
 vim
 zsh

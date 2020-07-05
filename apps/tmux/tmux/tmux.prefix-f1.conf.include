@@ -1,0 +1,51 @@
+#*******************************************************************************************************************
+#* Config files                                                                                                    *
+#*******************************************************************************************************************
+#* File:             tmux.prefix-f1.conf.include                                                                   *
+#* Copyright:        (c) 2011-2020 alimonda.com; Emanuele Alimonda                                                 *
+#*                   Public Domain                                                                                 *
+#*******************************************************************************************************************
+
+## Note: This file uses folding.  If you're in vim and you don't know how to unfold, press zR
+
+### Prefix Settings
+# {{{
+# Use F1 as prefix
+set-option -g prefix F1
+bind F1 send-prefix
+
+# Disable F2 as prefix
+unbind F2
+
+# Alternate prefix
+unbind-key C-b
+set-option -g prefix2 C-b
+bind C-b send-prefix -2
+# }}}
+
+### General Keybindings
+# {{{
+# No overrides
+# }}}
+
+### General Settings
+# {{{
+# No overrides
+# }}}
+
+### Statusbar
+# {{{
+# No overrides
+# }}}
+
+### Extra settings and bindings
+# {{{
+# No overrides
+# }}}
+
+### Plugins
+# {{{
+# No overrides
+# }}}
+
+# vim: set ft=conf foldmethod=marker foldenable :

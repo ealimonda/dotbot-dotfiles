@@ -1,0 +1,48 @@
+#*******************************************************************************************************************
+#* Config files                                                                                                    *
+#*******************************************************************************************************************
+#* File:             tmux.platform-osx.conf.include                                                                *
+#* Copyright:        (c) 2011-2020 alimonda.com; Emanuele Alimonda                                                 *
+#*                   Public Domain                                                                                 *
+#*******************************************************************************************************************
+
+## Note: This file uses folding.  If you're in vim and you don't know how to unfold, press zR
+
+### Prefix Settings
+# {{{
+# No overrides
+# }}}
+
+### General Keybindings
+# {{{
+# No overrides
+# }}}
+
+### General Settings
+# {{{
+# No overrides
+# }}}
+
+### Statusbar
+# {{{
+# /proc/loadavg doesn't exist on Mac OS, let's use uptime
+set -g status-right "#[fg=green]][#[fg=blue]%Y-%m-%d #[fg=white]%H:%M#[fg=green]][#[fg=white]#(uptime | awk '{ print \$\\(NF-2\\) \" \" \$\\(NF-1\\) \" \" \$\\(NF\\) }')#[default]"
+# }}}
+
+### Extra settings and bindings
+# {{{
+# vlock is not available on Mac OS X, let's just use screen blanking
+set -g lock-command 'tput civis && echo "Press Enter to resume..." && read -s -n1'
+bind F6 lock-client
+
+# Fix pasteboard support
+# (This should no longer be necessary)
+#set-option -g default-command "reattach-to-user-namespace -l $SHELL"
+# }}}
+
+### Plugins
+# {{{
+# No overrides
+# }}}
+
+# vim: set ft=conf foldmethod=marker foldenable :

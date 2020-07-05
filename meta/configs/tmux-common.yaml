@@ -1,0 +1,14 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+      glob: true
+- clean:
+  - ~/.tmux
+- create:
+  - ~/.tmux/resurrect
+- link:
+    ~/.tmux.conf: apps/tmux/tmux.conf
+    ~/.tmux/tmux.base.conf.include: apps/tmux/tmux/tmux.base.conf.include
+    ~/.tmux/tmux.plugins.conf.include: apps/tmux/tmux/tmux.plugins.conf.include
+    ~/.tmux/plugins/tpm: apps/tmux/tmux/plugins/tpm/*

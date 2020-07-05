@@ -9,3 +9,6 @@
 [submodule "shells/zsh/zshrc.d/zsh-vcs-prompt"]
 	path = shells/zsh/zshrc.d/zsh-vcs-prompt
 	url = https://github.com/ealimonda/zsh-vcs-prompt.git
+[submodule "apps/tmux/tmux/plugins/tpm"]
+	path = apps/tmux/tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
