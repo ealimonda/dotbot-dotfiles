@@ -127,6 +127,8 @@ fi
 
 # Some aliases to make commands more colorful
 alias grep='grep --color=auto'
-alias ls='ls --color'
+if [ "$UNAME" != "Darwin" ]; then
+	alias ls='ls --color'
+fi
 
 # vim: ts=4 sw=4
